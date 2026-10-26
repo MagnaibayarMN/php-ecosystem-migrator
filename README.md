@@ -56,13 +56,6 @@ Then in Claude Code: `/php-ecosystem-migrator` — or just ask
 
 **Claude Code — global:** same, into `~/.claude/skills/`.
 
-**As a plugin / marketplace:**
-
-```
-/plugin marketplace add <you>/php-ecosystem-migrator
-/plugin install php-ecosystem-migrator
-```
-
 **claude.ai:** zip the `skills/php-ecosystem-migrator` folder and upload it
 under Settings → Skills.
 
