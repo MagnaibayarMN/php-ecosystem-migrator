@@ -1,0 +1,11 @@
+{
+  "name": "php-ecosystem-migrator",
+  "owner": { "name": "Magnaibayar Ganzorig" },
+  "plugins": [
+    {
+      "name": "php-ecosystem-migrator",
+      "source": "./",
+      "description": "Plan and execute PHP upgrades across the whole ecosystem: runtime, deprecations, Laravel/Symfony/WordPress and their dependencies."
+    }
+  ]
+}

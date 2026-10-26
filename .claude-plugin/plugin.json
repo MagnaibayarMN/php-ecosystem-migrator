@@ -1,0 +1,8 @@
+{
+  "name": "php-ecosystem-migrator",
+  "version": "0.1.0",
+  "description": "Plan and execute PHP upgrades across the whole ecosystem: runtime, deprecations, Laravel/Symfony/WordPress and their dependencies.",
+  "author": { "name": "Magnaibayar Ganzorig" },
+  "license": "MIT",
+  "keywords": ["php", "migration", "upgrade", "laravel", "symfony", "wordpress", "rector", "security"]
+}

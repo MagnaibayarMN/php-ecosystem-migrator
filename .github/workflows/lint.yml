@@ -1,0 +1,17 @@
+name: lint
+on: [push, pull_request]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: shellcheck
+        run: sudo apt-get install -y shellcheck && shellcheck -S warning skills/*/scripts/*.sh
+      - name: bash syntax
+        run: bash -n skills/*/scripts/*.sh
+      - uses: shivammathur/setup-php@v2
+        with: { php-version: '8.4' }
+      - name: php lint
+        run: for f in skills/*/scripts/*.php; do php -l "$f"; done
+      - name: frontmatter present
+        run: for f in skills/*/SKILL.md; do head -1 "$f" | grep -q '^---$' && grep -q '^name:' "$f" && grep -q '^description:' "$f"; done
