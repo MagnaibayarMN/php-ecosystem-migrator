@@ -46,7 +46,7 @@ skills/php-ecosystem-migrator/
 **Claude Code — per project** (recommended for a legacy app you are migrating):
 
 ```bash
-git clone https://github.com/<you>/php-ecosystem-migrator /tmp/pem
+git clone https://github.com/magnaibayarmn/php-ecosystem-migrator /tmp/pem
 mkdir -p .claude/skills
 cp -r /tmp/pem/skills/php-ecosystem-migrator .claude/skills/
 ```
