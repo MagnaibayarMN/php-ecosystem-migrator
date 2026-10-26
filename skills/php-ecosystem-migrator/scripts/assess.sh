@@ -161,7 +161,7 @@ fi
 # ---------------------------------------------------------------- quick greps
 section "Quick grep for removed / dangerous constructs"
 
-GREP=rg; have rg || GREP=grep
+GREP="rg"; have rg || GREP="grep"
 patterns=(
   'create_function\('   '\beach\('         'mysql_(connect|query|fetch_|num_rows)'
   '\bereg'              'mcrypt_'          'utf8_(en|de)code\('
